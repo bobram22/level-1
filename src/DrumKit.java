@@ -20,6 +20,7 @@ public class DrumKit extends MouseAdapter {
     JLabel Bonnie;
     JLabel Chica;
     JLabel Foxy;
+    JLabel Fredbear;
     public static void main(String[] args) throws Exception {
    	 new DrumKit().getGoing();
     }
@@ -43,16 +44,18 @@ public class DrumKit extends MouseAdapter {
     String bonnie = "528.png";
     String chica = "Chica.png";
     String foxy = "536.png";
+    String fredbear = "fredbear.png";
    	 // 9. Use the "createLabelImage()" method to initialize the drumLabelWithImage variable.
    	 Freddy = createLabelImage(freddy);
    Bonnie = createLabelImage(bonnie);
    Chica = createLabelImage(chica);
    Foxy = createLabelImage(foxy);
+   Fredbear = createLabelImage(fredbear);
    	 // 10. Add the image to the pane
     panel.add(Freddy);
     panel.add(Bonnie);
     panel.add(Chica);
-    panel.add(Foxy);
+    panel.add(Foxy);panel.add(Fredbear);
    	 // 11. Set the layout of the panel to "new GridLayout()"
     panel.setLayout(new GridLayout());
    	 // 12. call the pack() method on the frame
@@ -61,6 +64,8 @@ public class DrumKit extends MouseAdapter {
 Freddy.addMouseListener(this);
 Bonnie.addMouseListener(this);
 Chica.addMouseListener(this);
+Foxy.addMouseListener(this);
+Fredbear.addMouseListener(this);
     }
 
     public void mouseClicked(MouseEvent e) {
@@ -79,6 +84,12 @@ if(drumClicked .equals(Bonnie)){
 }
 if(drumClicked .equals(Chica)){
 	playSound("pizza.wav");
+}
+if(drumClicked .equals(Foxy)){
+	playSound("fff.wav");
+}
+if(drumClicked .equals("Fredbear"));{
+	playSound("goldenjumpscare.wav");
 }
    		 // 17. ...use the playSound method to play a drum sound.
 
