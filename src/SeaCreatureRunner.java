@@ -1,36 +1,17 @@
-import javax.swing.JOptionPane;
 
-public class SeaCreatureRunner {
-public static void main(String[] args) {
-	
-	Object[] possibilities = {"SpongeBob", "Patrick", "Squidward"};
-	String s = (String)JOptionPane.showInputDialog(
-	                    null,
-	                    "Complete the sentence:\n"
-	                    + "\"Green eggs and...\"",
-	                    "Customized Dialog",
-	                    JOptionPane.PLAIN_MESSAGE,
-	                    null,
-	                    possibilities,
-	                    "ham");
-
-if(s .equals("Spongebob")){
-	SeaCreature Spongebob = new SeaCreature("Spongebob");
-	Spongebob.eat();
-	Spongebob.laugh();
-}
-	if(s .equals("Patrick")){
-	SeaCreature Patrick = new SeaCreature("Patrick");
-	Patrick.getName();
-	Patrick.eat();
-	Patrick.laugh();
+public class SeaCreaturerunner {
+	public static void main(String[] args) {
+		SeaCreature spongebob = new	SeaCreature("Spongebob");
+		System.out.println(spongebob.getName());
+		spongebob.eat();
+		spongebob.laugh();
+		SeaCreature patrick = new SeaCreature("Patrick");
+		System.out.println(patrick.getName());
+		patrick.eat();
+		patrick.laugh();
+		SeaCreature squidward = new SeaCreature("Squidward");
+		System.out.println(squidward.getName());
+		squidward.eat();
+		squidward.laugh();
 	}
-	
-	if(s .equals("Squidward")){
-	SeaCreature Squidward = new SeaCreature("Squidward");
-	Squidward.getName();
-	Squidward.eat();
-	Squidward.laugh();
-	}
-}
 }
