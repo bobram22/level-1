@@ -1,5 +1,5 @@
 
-public class SeaCreaturerunner {
+/*public class SeaCreaturerunner {
 	public static void main(String[] args) {
 		SeaCreature spongebob = new	SeaCreature("Spongebob");
 		System.out.println(spongebob.getName());
@@ -14,4 +14,4 @@ public class SeaCreaturerunner {
 		squidward.eat();
 		squidward.laugh();
 	}
-}
+}*/
