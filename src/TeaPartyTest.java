@@ -2,6 +2,7 @@
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
+<<<<<<< HEAD
 public class TeaPartyTest {
 	/**
 	 * Jane Austen is a women, so say “Hello Ms. Austen”. George Orwell is a
@@ -9,6 +10,17 @@ public class TeaPartyTest {
 	 * "Hello Sir Newton".
 	 **/
 
+=======
+
+public class TeaPartyTest {
+	/**
+	 * Jane Austen is a women, so say “Hello Ms. Austen”. 
+	 * George Orwell is a man, so say “Hello Mr. Orwell”. 
+	 * Isaac Newton was knighted, so say "Hello Sir Newton".
+	 **/
+
+
+>>>>>>> origin/master
 	@Test
 	public void test() {
 		TeaParty teaParty = new TeaParty();
@@ -18,3 +30,12 @@ public class TeaPartyTest {
 		assertEquals("Hello Sir Newton", teaParty.welcome("Newton", false, true));
 	}
 }
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+>>>>>>> origin/master
