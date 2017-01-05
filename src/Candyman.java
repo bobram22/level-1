@@ -26,6 +26,6 @@ void muchWOW(){
 public void actionPerformed(ActionEvent e) {
 	// TODO Auto-generated method stub
 	int m = 0;
-	if(b pressed)
+	//if(b pressed)
 }
 }
