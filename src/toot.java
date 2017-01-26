@@ -1,4 +1,6 @@
 import java.applet.AudioClip;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JApplet;
 import javax.swing.JButton;
@@ -7,7 +9,7 @@ import javax.swing.JPanel;
 
 
 
-public class toot {
+public class toot implements ActionListener {
 public static void main(String[] args) {
 toot t = new toot();
 t.fart();
@@ -20,13 +22,18 @@ f.add(p);
 p.add(b);
 f.setVisible(true);
 b.setText("Fart");
-b.addActionListener(null);
+b.addActionListener(this);
 b.setSize(20, 10);
 f.pack();
 }
 private void playSound(String fileName) {
 	AudioClip sound = JApplet.newAudioClip(getClass().getResource(fileName));
 	sound.play();
+}
+@Override
+public void actionPerformed(ActionEvent e) {
+	// TODO Auto-generated method stub
+	
 }
 
 
