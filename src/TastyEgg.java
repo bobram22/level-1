@@ -17,6 +17,7 @@ class KinderSurprise {
 
 	Egg getKinderSurpriseContents() {
 		// ADD CODE HERE
+		return this.egg;
 	}
 }
 
@@ -29,6 +30,7 @@ class Egg {
 	}
 
 	Toy getEggContents() {
+		return this.toy;
 		// ADD CODE HERE
 	}
 
@@ -38,7 +40,7 @@ class Toy {
 	String getToyName() {
 		int randomToySelector = new Random().nextInt(2);
 		if (randomToySelector == 0)
-			return "play doh";
+			return "play-doh";
 		else if (randomToySelector == 1)
 			return "train";
 		else
